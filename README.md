@@ -1,79 +1,68 @@
-# Klasifikasi Gaya Belajar Siswa Sekolah Dasar Berdasarkan Kebiasaan Belajar Menggunakan Random Forest
+# Learning Style Classification Using Random Forest
 
-## Deskripsi
-Project ini merupakan implementasi metode **Random Forest** untuk melakukan klasifikasi gaya belajar siswa sekolah dasar berdasarkan pola kebiasaan belajar siswa. Sistem ini mengklasifikasikan siswa ke dalam tiga kategori gaya belajar, yaitu:
+## Overview
 
-- Visual
-- Auditori
-- Kinestetik
+This project implements a Random Forest algorithm to classify elementary school students' learning styles based on their learning habits. The classification categories are:
 
-Penelitian ini bertujuan untuk membantu guru dan peneliti dalam memahami karakteristik belajar siswa sehingga proses pembelajaran dapat disesuaikan dengan gaya belajar masing-masing siswa.
+* Visual
+* Auditory
+* Kinesthetic
 
----
+This study was conducted as part of an undergraduate thesis in Informatics Engineering at Universitas Muhammadiyah Sukabumi.
 
-## Latar Belakang
-Setiap siswa memiliki gaya belajar yang berbeda-beda. Identifikasi gaya belajar secara manual membutuhkan waktu dan observasi yang cukup panjang. Oleh karena itu, pada penelitian ini digunakan algoritma machine learning **Random Forest** untuk membantu proses klasifikasi gaya belajar berdasarkan data kebiasaan belajar siswa.
+## Research Objective
 
----
-
-## Metode yang Digunakan
-Algoritma yang digunakan pada project ini adalah:
-
-- Random Forest Classifier
-- Data Preprocessing
-- Label Encoding
-- Train Test Split
-- Evaluasi menggunakan Accuracy Score dan Confusion Matrix
-
----
+The purpose of this project is to identify students' learning styles using learning habit data, helping teachers better understand students' learning preferences.
 
 ## Dataset
-Dataset diperoleh dari hasil pengumpulan data menggunakan Google Form yang berisi kebiasaan belajar siswa sekolah dasar.
 
-### Contoh atribut:
-- Cara memahami pelajaran
-- Kebiasaan saat belajar
-- Preferensi media belajar
-- Aktivitas saat menghafal
-- Respon terhadap instruksi guru
+The dataset consists of learning habit indicators collected through questionnaires. To protect privacy, personally identifiable information has been removed from the published dataset.
 
-### Target klasifikasi:
-- Visual
-- Auditori
-- Kinestetik
+Features used:
 
----
+* Intensitas_Belajar
+* Fokus_Belajar
+* Disiplin_Belajar
+* Interaksi_Belajar
+* Teknologi
+* Lingkungan_Belajar
+* Waktu_Efektif
 
-## Tools dan Teknologi
-Project ini menggunakan:
+Target:
 
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
+* Gaya_Belajar (Visual, Auditory, Kinesthetic)
 
----
+## Methodology
 
-## Struktur Project
+1. Data preprocessing
+2. Label encoding
+3. Train-test split
+4. Random Forest Classification
+5. Hyperparameter tuning using RandomizedSearchCV
+6. Cross-validation
+7. Model evaluation using confusion matrix and classification metrics
 
-```bash
-Klasifikasi-Gaya-Belajar/
-│
-├── dataset/
-│   └── dataset.csv
-│
-├── model/
-│   └── random_forest_model.pkl
-│
-├── notebook/
-│   └── klasifikasi_gaya_belajar.ipynb
-│
-├── output/
-│   ├── confusion_matrix.png
-│   └── hasil_prediksi.csv
-│
-├── README.md
-└── requirements.txt
+## Technologies
+
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* Matplotlib
+* Seaborn
+* Google Colab
+
+## Repository Structure
+
+* Data_siswa.csv : Dataset
+* Klasifikasi_gaya_belajar.ipynb : Research notebook
+* Klasifikasi_gaya_belajar.py : Python implementation
+* README.md : Project documentation
+
+## Author
+
+Teguh Mulya Lesmana
+
+Bachelor Thesis Project
+Informatics Engineering
+Universitas Muhammadiyah Sukabumi
