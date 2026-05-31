@@ -8,17 +8,17 @@
 
 ### Classification Report
 
-![Classification Report](results/Classification_Report.png)
+![Classification Report](Classification_Report.png)
 
 ### Confusion Matrix
 
-![Confusion Matrix](results/Confusion_Matrix.png)
+![Confusion Matrix](Confusion_Matrix.png)
 
 ### Cross Validation Performance
 
 Best Cross Validation F1 Score: **0.795**
 
-![Cross Validation](results/Cross_Validation.png)
+![Cross Validation](Cross_Validation.png)
 
 ### Feature Importance
 
@@ -29,4 +29,4 @@ The most influential features for predicting learning styles are:
 3. Intensitas_Belajar (0.167)
 4. Teknologi (0.164)
 
-![Feature Importance](results/Feature_Importance.png)
+![Feature Importance](Feature_Importance.png)
